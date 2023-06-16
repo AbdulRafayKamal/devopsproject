@@ -1,1 +1,25 @@
 # devopsproject
+
+To go to postgresql:
+sudo -u postgres psql
+
+To restart database:
+sudo service postgresql restart
+
+To see the table entities:
+SELECT * FROM students;
+
+to change the encoding
+update pg_database set encoding = pg_char_to_encoding('UTF8') where datname = 'DevOps'
+
+\l to list database
+\c databasename to switch database
+\q to quit database
+
+
+
+To Execute ansible playbook:
+sudo ansible-playbook ansible/container1.yml  -e 'ansible_python_interpreter=/usr/bin/python3'
+
+
+
